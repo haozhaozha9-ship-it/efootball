@@ -2,27 +2,33 @@
 <html lang="ku" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>eFootball Fans - Zhirmand</title>
+    <title>Zhirmand Coins Store</title>
     <style>
         body { font-family: sans-serif; background-color: #001f3f; color: white; text-align: center; padding: 20px; }
-        .card { background: #003366; border: 2px solid #ffde59; border-radius: 15px; padding: 20px; width: 280px; margin: 20px auto; transition: 0.3s; }
-        .card:hover { transform: scale(1.05); }
-        img { width: 100%; border-radius: 10px; }
-        .btn { background: #ffde59; color: black; padding: 10px 20px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; margin-top: 10px; }
-        .snap-btn { background: #fffc00; margin-top: 15px; }
+        .store-card { background: linear-gradient(145deg, #003366, #001f3f); border: 3px solid #ffde59; border-radius: 20px; padding: 25px; width: 320px; margin: 20px auto; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        h1 { color: #ffde59; text-shadow: 2px 2px 10px rgba(255, 222, 89, 0.5); }
+        img { width: 100%; border-radius: 15px; margin-bottom: 15px; border: 1px solid #ffde59; }
+        .price-list { text-align: right; margin: 20px 0; background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; }
+        .price-item { display: flex; justify-content: space-between; border-bottom: 1px dashed #ffde59; padding: 8px 0; }
+        .coin-icon { color: #ffde59; font-weight: bold; }
+        .buy-btn { background: #ffde59; color: black; padding: 15px 25px; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; text-decoration: none; display: block; margin-top: 20px; font-size: 18px; transition: 0.3s; }
+        .buy-btn:hover { background: #fff; transform: scale(1.05); }
     </style>
 </head>
 <body>
-    <h1>جیهانا eFootball ب دەستێ ژیرمەند</h1>
-    <div class="card">
-        <img src="https://assets.goal.com/v3/assets/blt938350d23191f271/blt9e7102e3b2e557b6/64b54e3d36e2f17046e7f849/Lionel_Messi_Inter_Miami_2023.jpg" alt="Messi">
-        <h3>لیۆنێل مێسی</h3>
-        <p>هێزا وی: 99</p>
-        <audio controls autoplay>
-            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-        </audio>
-        <br>
-        <a href="https://www.snapchat.com/add/zhirmand" class="btn snap-btn">Snapchat مێ فۆڵۆ بکە</a>
+    <h1>دوکانێ ژیرمەند بۆ کۆینێن eFootball</h1>
+    <div class="store-card">
+        <img src="https://static.independent.co.uk/2023/07/16/01/Messi_Inter_Miami.jpg" alt="Messi Inter Miami">
+        
+        <div class="price-list">
+            <div class="price-item"><span>1000 Coins</span> <span class="coin-icon">5,000 IQD</span></div>
+            <div class="price-item"><span>3000 Coins</span> <span class="coin-icon">12,000 IQD</span></div>
+            <div class="price-item"><span>5000 Coins</span> <span class="coin-icon">20,000 IQD</span></div>
+        </div>
+
+        <p style="font-size: 14px; color: #ccc;">پشتی پارە هاتە فرێکرن، کۆین دێ چنە سەر ئەکاونتێ تە.</p>
+        
+        <a href="https://www.snapchat.com/add/zhirmand" class="buy-btn">بۆ کڕینێ مەسجێ ل سناپچاتی بفرێکه</a>
     </div>
 </body>
 </html>
