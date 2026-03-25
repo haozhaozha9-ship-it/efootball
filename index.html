@@ -8,8 +8,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@600&display=swap');
 
         @keyframes glow {
-            0% { text-shadow: 0 0 5px #ffde59; color: #ffde59; }
-            50% { text-shadow: 0 0 20px #ffde59, 0 0 30px #ff914d; color: #fff; }
+            100% { text-shadow: 0 0 5px #ffde59; color: #ffde59; }
+            100% { text-shadow: 0 0 20px #ffde59, 0 0 30px #ff914d; color: #fff; }
             100% { text-shadow: 0 0 5px #ffde59; color: #ffde59; }
         }
 
@@ -40,20 +40,24 @@
             font-size: 26px; 
             margin-bottom: 20px;
             animation: glow 2.5s infinite ease-in-out;
-            letter-spacing: 2px;
         }
 
-        .pes-img {
-            width: 100%;
-            height: auto;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 222, 89, 0.5);
-            margin-bottom: 20px;
+        .coin-icon {
+            width: 120px;
+            height: 120px;
+            margin: 10px auto 20px;
+            background: #ffde59;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            box-shadow: 0 0 20px #ffde59;
+            border: 5px solid #fff;
         }
 
         .price-card {
             background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(5px);
             border-radius: 15px;
             padding: 12px 20px;
             margin: 12px 0;
@@ -63,11 +67,7 @@
             border-left: 4px solid #ffde59;
         }
 
-        .coin-amount { 
-            font-weight: bold; 
-            font-size: 19px; 
-            color: #ffde59; 
-        }
+        .coin-amount { font-weight: bold; font-size: 19px; color: #ffde59; }
 
         .buy-now {
             background: linear-gradient(90deg, #ffde59, #ff914d);
@@ -77,25 +77,19 @@
             text-decoration: none;
             display: block;
             font-weight: bold;
-            font-size: 15px; /* کێمەکێ بچووکتر دا نڤیسینا درێژ بجهـ ببیت */
+            font-size: 14px;
             margin-top: 25px;
             box-shadow: 0 8px 20px rgba(255, 222, 89, 0.3);
-            line-height: 1.4;
         }
 
-        .footer-text {
-            font-size: 11px; 
-            margin-top: 20px; 
-            color: #666;
-            text-transform: uppercase;
-        }
+        .footer-text { font-size: 11px; margin-top: 20px; color: #666; }
     </style>
 </head>
 <body>
     <div class="app-container">
         <h1>Zako Coins PES</h1>
         
-        <img src="https://www.konami.com/efootball/s/img/top/main_visual_pc.jpg" class="pes-img" alt="eFootball">
+        <div class="coin-icon">🟡</div>
 
         <div class="price-card">
             <span class="coin-amount">1000 Coins</span>
@@ -110,7 +104,7 @@
             <span>20,000 IQD</span>
         </div>
 
-        <a href="https://www.snapchat.com/add/Zakarya.reka200" class="buy-now">📲 بو پتر پیزانینا سه را دانا سناپچاني مه بكه</a>
+        <a href="https://www.snapchat.com/add/Zakarya.reka200" class="buy-now">📲 بو پتر پیزانینا سه را دانا سناپچانی مه بكه</a>
         
         <p class="footer-text">Verified Seller • Fast Delivery</p>
     </div>
