@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="ku" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دوکانێ ژیرمه‌ند</title>
+    <title>Zako Coins PES</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@600&display=swap');
+
         @keyframes glow {
-            0% { text-shadow: 0 0 5px #ffde59; }
-            50% { text-shadow: 0 0 20px #ffde59, 0 0 30px #ff914d; }
-            100% { text-shadow: 0 0 5px #ffde59; }
+            0% { text-shadow: 0 0 5px #ffde59; color: #ffde59; }
+            50% { text-shadow: 0 0 20px #ffde59, 0 0 30px #ff914d; color: #fff; }
+            100% { text-shadow: 0 0 5px #ffde59; color: #ffde59; }
         }
+
         body { 
-            font-family: sans-serif; 
+            font-family: 'Rajdhani', sans-serif; 
             background-color: #000b1a; 
             color: white; 
             margin: 0; 
@@ -20,58 +23,92 @@
             align-items: center; 
             min-height: 100vh;
         }
+
         .app-container {
-            background: #001f3f;
+            background: linear-gradient(145deg, #001f3f, #000b1a);
             width: 90%;
             max-width: 360px;
-            border-radius: 30px;
-            padding: 20px;
+            border-radius: 35px;
+            padding: 25px;
             border: 2px solid #ffde59;
-            box-shadow: 0 0 25px rgba(255, 222, 89, 0.2);
+            box-shadow: 0 0 30px rgba(255, 222, 89, 0.15);
             text-align: center;
         }
+
         h1 { 
-            color: #ffde59; 
-            font-size: 24px; 
-            animation: glow 2s infinite;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 26px; 
+            margin-bottom: 20px;
+            animation: glow 2.5s infinite ease-in-out;
+            letter-spacing: 2px;
         }
-        .messi-img {
+
+        .pes-img {
             width: 100%;
             height: auto;
             border-radius: 20px;
-            border: 2px solid #ffde59;
-            margin: 15px 0;
-            display: block;
+            border: 1px solid rgba(255, 222, 89, 0.5);
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
         }
+
         .price-card {
-            background: #003366;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
             border-radius: 15px;
-            padding: 10px;
-            margin: 10px 0;
+            padding: 12px 20px;
+            margin: 12px 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-right: 5px solid #ffde59;
+            border-left: 4px solid #ffde59;
+            transition: 0.3s;
         }
-        .coin-amount { font-weight: bold; font-size: 18px; color: #ffde59; }
+
+        .price-card:hover {
+            background: rgba(255, 222, 89, 0.1);
+            transform: scale(1.02);
+        }
+
+        .coin-amount { 
+            font-weight: bold; 
+            font-size: 19px; 
+            color: #ffde59; 
+        }
+
         .buy-now {
             background: linear-gradient(90deg, #ffde59, #ff914d);
             color: #000;
-            padding: 15px;
+            padding: 16px;
             border-radius: 50px;
             text-decoration: none;
             display: block;
             font-weight: bold;
-            margin-top: 20px;
-            box-shadow: 0 5px 15px rgba(255, 222, 89, 0.4);
+            font-size: 18px;
+            margin-top: 25px;
+            box-shadow: 0 8px 20px rgba(255, 222, 89, 0.3);
+            transition: 0.3s;
+        }
+
+        .buy-now:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(255, 222, 89, 0.5);
+        }
+
+        .footer-text {
+            font-size: 11px; 
+            margin-top: 20px; 
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
     <div class="app-container">
-        <h1>✨ دوکانێ ژیرمه‌ند ✨</h1>
+        <h1>Zako Coins PES</h1>
         
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel_Messi_20180626.jpg" class="messi-img" alt="Messi">
+        <img src="https://www.konami.com/efootball/s/img/top/main_visual_pc.jpg" class="pes-img" alt="eFootball PES">
 
         <div class="price-card">
             <span class="coin-amount">1000 Coins</span>
@@ -86,8 +123,9 @@
             <span>20,000 IQD</span>
         </div>
 
-        <a href="https://www.snapchat.com/add/Zakarya.reka200" class="buy-now">📲 نوکە ب سناپچاتی بکڕە</a>
-        <p style="font-size: 12px; margin-top: 15px; color: #888;">Safe & Fast Transfer ⚡</p>
+        <a href="https://www.snapchat.com/add/Zakarya.reka200" class="buy-now">📲 Order via Snapchat</a>
+        
+        <p class="footer-text">Verified Seller • Fast Delivery • 2026</p>
     </div>
 </body>
 </html>
