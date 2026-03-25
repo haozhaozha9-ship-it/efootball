@@ -27,7 +27,7 @@
         .app-container {
             background: linear-gradient(145deg, #001f3f, #000b1a);
             width: 90%;
-            max-width: 380px;
+            max-width: 360px;
             border-radius: 35px;
             padding: 25px;
             border: 2px solid #ffde59;
@@ -40,18 +40,28 @@
             font-size: 26px; 
             margin-bottom: 20px;
             animation: glow 2.5s infinite ease-in-out;
+            letter-spacing: 2px;
         }
 
-        /* ئەڤە وێنەیێ کۆینێ زێڕینی یێ ب کۆدی دروستکری */
-        .coin-svg {
-            width: 150px;
-            height: 150px;
-            margin: 10px auto 20px;
-            filter: drop-shadow(0 0 10px #ffde59);
+        .image-crop {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 2px solid rgba(255, 222, 89, 0.5);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+
+        .image-crop img {
+            width: auto;
+            height: 100%;
+            display: block;
         }
 
         .price-card {
             background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
             border-radius: 15px;
             padding: 12px 20px;
             margin: 12px 0;
@@ -61,34 +71,39 @@
             border-left: 4px solid #ffde59;
         }
 
-        .coin-amount { font-weight: bold; font-size: 19px; color: #ffde59; }
+        .coin-amount { 
+            font-weight: bold; 
+            font-size: 19px; 
+            color: #ffde59; 
+        }
 
         .buy-now {
             background: linear-gradient(90deg, #ffde59, #ff914d);
             color: #000;
-            padding: 18px 10px;
+            padding: 16px;
             border-radius: 50px;
             text-decoration: none;
             display: block;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 18px;
             margin-top: 25px;
             box-shadow: 0 8px 20px rgba(255, 222, 89, 0.3);
         }
 
-        .footer-text { font-size: 11px; margin-top: 20px; color: #666; }
+        .footer-text {
+            font-size: 11px; 
+            margin-top: 20px; 
+            color: #666;
+            text-transform: uppercase;
+        }
     </style>
 </head>
 <body>
     <div class="app-container">
         <h1>Zako Coins PES</h1>
         
-        <div class="coin-svg">
-            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="50" cy="50" r="45" fill="#ffde59" stroke="#fff" stroke-width="2"/>
-                <circle cx="50" cy="50" r="35" fill="none" stroke="#b8860b" stroke-width="2" stroke-dasharray="5,3"/>
-                <text x="50" y="65" font-family="Arial" font-size="40" font-weight="bold" fill="#b8860b" text-anchor="middle">C</text>
-            </svg>
+        <div class="image-crop">
+            <img src="https://images2.imgbox.com/39/53/7d1k7b7K_o.png" alt="Zako PES">
         </div>
 
         <div class="price-card">
@@ -104,7 +119,7 @@
             <span>20,000 IQD</span>
         </div>
 
-        <a href="https://www.snapchat.com/add/Zakarya.reka200" class="buy-now">📲 بو پتر پیزانینا سه را دانا سناپچانی مه بكه</a>
+        <a href="https://www.snapchat.com/add/Zakarya.reka200" class="buy-now">📲 Order via Snapchat</a>
         
         <p class="footer-text">Verified Seller • Fast Delivery</p>
     </div>
